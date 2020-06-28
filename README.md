@@ -1,3 +1,22 @@
+
+doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))   
+#The page itself 
+
+
+title = doc.css(".post")  
+#The collection of course offerings 
+
+title = doc.css(".post").first.css("h2").text
+#title of an individual course offering 
+
+full_time = doc.css(".post").first.css(".date").text
+#The schedule of an indvidiaul course offering  
+
+description = doc.css(".post").first.css("p").text
+#The description of an individual course offering 
+
+
+
 # Object Oriented Scraping
 
 ## Objectives
