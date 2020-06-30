@@ -43,7 +43,7 @@ class Scraper
   
 end
 
-Scraper.new.get_page
+Scraper.new.print_courses
 
 #collection_course_offerings: doc.css(".post")
 # title: doc.css(".post").first.css("h2").text
